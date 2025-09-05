@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        /* Shared Styles for the Courses Page */
+        body {
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #00ff00;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: white;
+        }
+        .semester-section {
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.2);
+        }
+        .semester-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .course-item {
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 2px solid #000000;
+            border-radius: 10%;
+            box-shadow: 0 0 10px rgba(17, 255, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1rem;
+            height: 250px;
+        }
+        .course-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+        }
+        .course-item h3, .course-item h4, .course-item h5, .course-item h6 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        .course-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .small-back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: #00ff00;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        .small-back-button:hover {
+            background-color: white;
+        }
+        @media (max-width: 1024px) {
+            .course-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .course-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle-container">
+        <button id="lang-toggle" class="lang-button">English | Deutsch</button>
+    </div>
+    
+    <section id="sem-1" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-1">Semester 1</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s1-course-1">Engineering Drawing</h3><img src="Engineering_drawing.jpg" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s1-course-2">Engineering Physics</h3><img src="Engineering_physics.jpg" alt="Subject 2"></li>
+            <li class="course-item"><h3 data-i18n="s1-course-3">Calculus & Numerical Methods</h3><img src="calculus.png" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s1-course-4">Basic Electrical Engineering</h3><img src="electrical.jpg" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s1-course-5">Engineering Mechanics</h3><img src="mechanics.webp" alt="Subject 5"></li>
+            <li class="course-item"><h3 data-i18n="s1-course-6">Engineering Physics Laboratory</h3><img src="physics-lab.jpg" alt="Subject 6"></li>
+            <li class="course-item"><h4 data-i18n="s1-course-7">Physical Activity</h4><img src="physical-education.jpg" alt="Subject 7"></li>
+            <li class="course-item"><h4 data-i18n="s1-course-8">Design Thinking Laboratory</h4><img src="Design-Thinking.jpg" alt="Subject 8"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-2" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-2">Semester 2</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s2-course-1">Engineering Chemistry</h3><img src="2chemistary.webp" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-2">Differential Equations & Vector Calculus</h3><img src="2vector.jpg" alt="Subject 2"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-3">Basic Electronics Engineering</h3><img src="2electronics.webp" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-4">Elements of Mechanical Engineering</h3><img src="2mechnical.jpg" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-5">Programming & Problem Solving</h3><img src="2problemsolving.jpg" alt="Subject 5"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-6">Chemistry Lab</h3><img src="2chemistart_lab.jpeg" alt="Subject 6"></li>
+            <li class="course-item"><h3 data-i18n="s2-course-7">Programming Lab</h3><img src="2codelab.jpeg" alt="Subject 7"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-3" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-3">Semester 3</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s3-course-1">Linear Algebra & Integral Transforms</h3><img src="3linear.png" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-2">Discrete Mathematics</h3><img src="3Discrete-Mathematics.jpg" alt="Subject 2"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-3">Digital System Design</h3><img src="3digital.png" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-4">Data Structures & Applications</h3><img src="3data_structure.png" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-5">Computer Organization</h3><img src="3co.jpg" alt="Subject 5"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-6">Unix Programming</h3><img src="3unix.png" alt="Subject 6"></li>
+            <li class="course-item"><h3 data-i18n="s3-course-7">Kannada</h3><img src="3kannada.png" alt="Subject 7"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-4" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-4">Semester 4</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s4-course-1">Statistics & Probability</h3><img src="4statistics.png" alt="Subject 1"></li>
+            <li class="course-item"><h4 data-i18n="s4-course-2">Microprocessor & Microcontroller</h4><img src="4micro.jpg" alt="Subject 2"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-3">Operating System</h3><img src="4os.jpg" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-4">Algorithm Design</h3><img src="4algorithm.png" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-5">Java Oops</h3><img src="4java.webp" alt="Subject 5"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-6">Microprocessor Lab</h3><img src="4micro-lab.jpg" alt="Subject 6"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-7">Biology for Engineers</h3><img src="4bio.jpg" alt="Subject 7"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-8">Internship-1</h3><img src="4intern.jpeg" alt="Subject 8"></li>
+            <li class="course-item"><h3 data-i18n="s4-course-9">Universal Human Values</h3><img src="4uv.png" alt="Subject 9"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-5" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-5">Semester 5</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s5-course-1">Software Engineering</h3><img src="5sf.jpg" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-2">Theoretical Foundations & Computation</h3><img src="5tof.png" alt="Subject 2"></li>
+            <li class="course-item"><h4 data-i18n="s5-course-3">Management Information System</h4><img src="5mam.jpg" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-4">Database Management systems</h3><img src="5db.webp" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-5">Data Communication</h3><img src="5data.jpeg" alt="Subject 5"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-6">Mini-Project 1</h3><img src="5project.jpeg" alt="Subject 6"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-7">Internet of things</h3><img src="5iot.jpg" alt="Subject 7"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-8">Social Connection</h3><img src="5social.webp" alt="Subject 8"></li>
+            <li class="course-item"><h3 data-i18n="s5-course-9">Environmental Studies</h3><img src="5evs.webp" alt="Subject 9"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-6" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-6">Semester 6</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s6-course-1">Computer Network</h3><img src="6cn.png" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-2">Artificial Intelligence</h3><img src="6ai.jpg" alt="Subject 2"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-3">Entrepreneurship</h3><img src="6epr.jpg" alt="Subject 3"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-4">Mini-project 2</h3><img src="6project.jpg" alt="Subject 4"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-5">Big Data Technologies</h3><img src="6big.webp" alt="Subject 5"></li>
+            <li class="course-item"><h6 data-i18n="s6-course-6">Analytical Ability & Soft skills</h6><img src="6soft.png" alt="Subject 6"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-7">Project Management</h3><img src="6project_man.jpg" alt="Subject 7"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-8">Internship-2</h3><img src="6intern.jpeg" alt="Subject 8"></li>
+            <li class="course-item"><h3 data-i18n="s6-course-9">Constitution</h3><img src="6con.jpg" alt="Subject 9"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-7" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-7">Semester 7</h1>
+        <ul class="course-list">
+            <li class="course-item"><h2 data-i18n="s7-course-1">Machine learning</h2><img src="7machine.png" alt="Subject 1"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-2">Major Project phase-1</h2><img src="7project.jpeg" alt="Subject 2"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-3">Information storage Management</h2><img src="7storage.jpg" alt="Subject 3"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-4">Enterprise Resource Planning</h2><img src="7erp.webp" alt="Subject 4"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-5">Data Science</h2><img src="7data.jpg" alt="Subject 5"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-6">Linear Algebra & its Application</h2><img src="7linear.jpeg" alt="Subject 6"></li>
+            <li class="course-item"><h2 data-i18n="s7-course-7">Research Methodology & intellectual property rights</h2><img src="7research.jpg" alt="Subject 7"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <section id="sem-8" class="semester-section">
+        <h1 class="semester-title" data-i18n="sem-8">Semester 8</h1>
+        <ul class="course-list">
+            <li class="course-item"><h3 data-i18n="s8-course-1">Major Project</h3><img src="8project.png" alt="Subject 1"></li>
+            <li class="course-item"><h3 data-i18n="s8-course-2">Internship</h3><img src="8intern.webp" alt="Subject 2"></li>
+        </ul>
+        <a href="index.Html" class="small-back-button" data-i18n="back-home">Back to Home</a>
+    </section>
+
+    <script src="courses.js"></script>
+</body>
+</html>

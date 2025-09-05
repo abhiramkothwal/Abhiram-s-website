@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiram's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <a href="courses.html" class="semester-link"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="language-toggle-container">
+        <button id="lang-toggle" class="lang-button">English</button>
+    </div>
+
+    <div class="main-content" id="home-section">
+        <div class="video-container">
+            <video id="background-video" autoplay muted loop playsinline>
+                <source src="Image_to_Animated_Video_Generation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="overlay">
+            <h3 class="p-6 text-2xl md:text-4xl font-bold tracking-wide text-white top-text cursive-font" data-i18n="welcome-top">
+                Welcome to Abhiram Kothwal's
+            </h3>
+            <h3 class="p-6 text-2xl md:text-4xl font-bold tracking-wide text-white bottom-text cursive-font" data-i18n="welcome-bottom">
+                Ventures in Coding & Creativity
+            </h3>
+        </div>
+    </div>
+
+    <div class="nav-container">
+    <ul class="space-y-2 text-xl">
+        <li class="nav-item"><a href="#home-section" data-section="home-section" data-i18n="nav-home">Home</a></li>
+        <li class="nav-item"><a href="#about-myself" data-section="about-myself" data-i18n="nav-about">About Myself</a></li>
+        <li class="nav-item"><a href="#courses-done" data-section="courses-done" data-i18n="nav-courses">Courses Done</a></li>
+        <li class="nav-item"><a href="#projects-done" data-section="projects-done" data-i18n="nav-projects">Projects Done</a></li>
+        <li class="nav-item"><a href="#tech-skills" data-section="tech-skills" data-i18n="nav-skills">Tech Skills</a></li>
+        <li class="nav-item resume-btn">
+            <a href="ABHIRAM KOTHWAL- 4MC21IS002-2025-ISE.pdf" target="_blank" class="resume-button" data-i18n="nav-resume">My Resume</a>
+        </li>
+    </ul>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/abhiram-kothwal-65040622a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLGyvq157RMim%2FgiXZOjbqw%3D%3D" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/_s_v_shetty/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:abhiramkothwal1301@gmail.com" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+</a>
+        <a href="https://github.com/abhiramkothwal" aria-label="Github">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</div>
+s
+    <section id="about-myself" class="about-myself-section">
+        <div class="about-content">
+            <div class="text-container">
+                <h2 class="subsection-title" data-i18n="about-title">Hello everyone</h2>
+                <h3>
+                    <p data-i18n="about-text-1">I am Abhiram kothwal; undergrad student in Information Science Engineering from Malnad Hassan. Welcome to my personal website. This website represents my Journey through Skills, Projects & Growth.
+                        <br> <br><span data-i18n="about-text-2">Vison to create transformative technology ventures with global impact.</span>
+                    </p>
+                </h3>
+            </div>
+            <div class="photo-container lightning-background">
+                <img src="Abhiram.jpg" alt="Abhiram Kothwal" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="courses-done" class="courses-section">
+        <h2 class="section-title" data-i18n="courses-title">Courses Done</h2>
+        <div class="semesters-grid">
+            <a href="courses.html?sem=1" class="semester-bubble">
+                <h3 data-i18n="sem-1">Semester 1</h3>
+            </a>
+            <a href="courses.html?sem=2" class="semester-bubble">
+                <h3 data-i18n="sem-2">Semester 2</h3>
+            </a>
+            <a href="courses.html?sem=3" class="semester-bubble">
+                <h3 data-i18n="sem-3">Semester 3</h3>
+            </a>
+            <a href="courses.html?sem=4" class="semester-bubble">
+                <h3 data-i18n="sem-4">Semester 4</h3>
+            </a>
+            <a href="courses.html?sem=5" class="semester-bubble">
+                <h3 data-i18n="sem-5">Semester 5</h3>
+            </a>
+            <a href="courses.html?sem=6" class="semester-bubble">
+                <h3 data-i18n="sem-6">Semester 6</h3>
+            </a>
+            <a href="courses.html?sem=7" class="semester-bubble">
+                <h3 data-i18n="sem-7">Semester 7</h3>
+            </a>
+            <a href="courses.html?sem=8" class="semester-bubble">
+                <h3 data-i18n="sem-8">Semester 8</h3>
+            </a>
+        </div>
+    </section>
+    
+    <section id="projects-done" class="projects-section">
+    <h2 class="section-title" data-i18n="projects-title">Projects Done</h2>
+
+    <div class="projects-accordion">
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3 data-i18n="project-1-title">College Canteen Management System</h3>
+                <span class="accordion-icon">&#9660;</span> </div>
+            <div class="accordion-content">
+                <div class="project-details-inner">
+                    <img src="canteen.png" alt="Project 1 Image" class="project-detail-image">
+                    <ul class="project-points">
+                        <ol data-i18n="project-1-point-1">1. Developed a user-friendly website for students and staffs that reduced waiting time by 40%.</ol>
+                        <ol data-i18n="project-1-point-2">2. Enabled real-time order tracking using Firebase, improved overall customer satisfaction.</ol>
+                        <ol data-i18n="project-1-point-3">3. Also integrated sales analytics to ensure complete transaction transparency.</ol>
+                        <ol data-i18n="project-1-point-4">4. Streamlined order processing, cutting service time from 15 to 8 minutes.</ol>
+                    </ul>
+                     <div class="project-tech-used">
+                        <h4 data-i18n="tech-used">Technologies Used:</h4>
+                        <div class="tech-box">React.js</div>
+                        <div class="tech-box">Django</div>
+                        <div class="tech-box">Node.js</div>
+                        <div class="tech-box">JavaScript</div>
+                        <div class="tech-box">Git</div>
+                        <div class="tech-box">MySql</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3 data-i18n="project-2-title">AI Powered Red Eye Disease Detection Using CNN</h3>
+                <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <div class="project-details-inner">
+                    <img src="eye.jpg" alt="Project 2 Image" class="project-detail-image">
+                    <ul class="project-points">
+                        <ol data-i18n="project-2-point-1">1. Designed a website for users to upload images and detect disease.</ol>
+                        <ol data-i18n="project-2-point-2">2. Built AI model using CNN to detect red eye disease in 3 categories.</ol>
+                        <ol data-i18n="project-2-point-3">3. Achieved 97% accuracy in automatically detecting red eye conditions.</ol>
+                        <ol data-i18n="project-2-point-4">4. Facilitated real-time prediction of disease severity for immediate action.</ol>
+                        <ol data-i18n="project-2-point-5">5. Published paper in International Journal of Scientific Development and Research.</ol>
+                    </ul>
+                    <div class="project-tech-used">
+                        <h4 data-i18n="tech-used">Technologies Used:</h4>
+                        <div class="tech-box">Python</div>
+                        <div class="tech-box">OpenCV</div>
+                        <div class="tech-box">TensorFlow</div>
+                        <div class="tech-box">CNN</div>
+                        <div class="tech-box">React.js</div>
+                        <div class="tech-box">MySql</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3 data-i18n="project-3-title">Real-Time Deepfake Video Detection Using Multimodal ML </h3>
+                <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <div class="project-details-inner">
+                    <img src="deepfake.png" alt="Project 3 Image" class="project-detail-image">
+                    <ul class="project-points">
+                        <ol data-i18n="project-3-point-1">1. Developed deepfake video detector attaining 98% accuracy.</ol>
+                        <ol data-i18n="project-3-point-2">2. Processed 500+ videos, reducing manual verification time by 70%.</ol>
+                        <ol data-i18n="project-3-point-3">3. Optimized detection of deepfakes by 20% using multimodal analysis.</ol>
+                        <ol data-i18n="project-3-point-4">4. Enabled live detection at 30+ Frames Per Second, providing instant threat alerts.</ol>
+                    </ul>
+                    <div class="project-tech-used">
+                        <h4 data-i18n="tech-used">Technologies Used:</h4>
+                        <div class="tech-box">Python</div>
+                        <div class="tech-box">XceptionNet</div>
+                        <div class="tech-box">Flask</div>
+                        <div class="tech-box">PyTorch</div>
+                        <div class="tech-box">OpenCV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h3 data-i18n="project-4-title">Object Detection System to detect defects in minute and second hands during the manufacturing process</h3>
+                <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <div class="project-details-inner">
+                    <img src="watch.png" alt="Project 4 Image" class="project-detail-image">
+                    <ul class="project-points">
+                        <ol data-i18n="project-4-point-1">1. Built a real-time object detection system using OpenCV and Raspberry Pi.</ol>
+                        <ol data-i18n="project-4-point-2">2. Automated defect detection in watch hands during manufacturing.</ol>
+                        <ol data-i18n="project-4-point-3">3. Improved detection accuracy by 20% and reduced the false positives.</ol>
+                        <ol data-i18n="project-4-point-4">4. Improved quality control by automating small component defect detection using image processing</ol>
+                    </ul>
+                    <div class="project-tech-used">
+                        <h4 data-i18n="tech-used">Technologies Used:</h4>
+                        <div class="tech-box">Python</div>
+                        <div class="tech-box">Raspberry Pi</div>
+                        <div class="tech-box">OpenCV</div>
+                        <div class="tech-box">Pandas</div>
+                        <div class="tech-box">Matplotlib</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+    <section id="tech-skills" class="tech-skills-section">
+        <h2 class="section-title" data-i18n="skills-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-bubble">
+                <div class="skill-image-container"> <img src="HTML.png" alt="HTML"></div>
+            </div>
+            <div class="skill-bubble">
+                <img src="css.png" alt="CSS">
+            </div>
+            <div class="skill-bubble">
+                <img src="github.jpg" alt="Gitgub">
+            </div>
+            <div class="skill-bubble">
+                <img src="javascript.png" alt="JavaScript">
+            </div>
+            <div class="skill-bubble">
+                <img src="react.png" alt="React">
+            </div>
+            <div class="skill-bubble">
+                <img src="python.png" alt="Python">
+            </div>
+            <div class="skill-bubble">
+                <img src="sql-logo.png" alt="SQL">
+            </div>
+            <div class="skill-bubble">
+                <img src="git.png" alt="Git">
+            </div>
+            <div class="skill-bubble">
+                <img src="c.jpg" alt="C++">
+            </div>
+            <div class="skill-bubble">
+                <img src="aws.png" alt="AWS">
+            </div>
+            <div class="skill-bubble">
+                <img src="power.jpg" alt="power">
+            </div>
+            <div class="skill-bubble">
+                <img src="node.png" alt="Node.js">
+            </div>
+            <div class="skill-bubble">
+                <div class="skill-image-container"> <img src="HTML.png" alt="HTML"></div>
+            </div>
+            <div class="skill-bubble">
+                <img src="css.png" alt="CSS">
+            </div>
+            <div class="skill-bubble">
+                <img src="javascript.png" alt="JavaScript">
+            </div>
+            <div class="skill-bubble">
+                <img src="react.png" alt="React">
+            </div>
+            <div class="skill-bubble">
+                <img src="python.png" alt="Python">
+            </div>
+            <div class="skill-bubble">
+                <img src="sql-logo.png" alt="SQL">
+            </div>
+            <div class="skill-bubble">
+                <img src="git.png" alt="Git">
+            </div>
+            <div class="skill-bubble">
+                <img src="c.jpg" alt="C++">
+            </div>
+            <div class="skill-bubble">
+                <img src="aws.png" alt="AWS">
+            </div>
+            <div class="skill-bubble">
+                <img src="github.jpg" alt="Github">
+            </div>
+            <div class="skill-bubble">
+                <img src="node.png" alt="Node.js">
+            </div>
+            <div class="skill-bubble">
+                <img src="power.jpg" alt="power">
+            </div>
+        </div>
+    </section>
+
+    <script src="Home.js"></script>
+</body>
+</html>
