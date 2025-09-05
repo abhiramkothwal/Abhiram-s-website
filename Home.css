@@ -414,7 +414,7 @@ body {
     width: fit-content;
     margin-top: 2rem;
     white-space: nowrap;
-    animation: slide-left 10s linear infinite;
+    animation: slide-left 20s linear infinite;
 }
 
 .skills-grid:hover {
