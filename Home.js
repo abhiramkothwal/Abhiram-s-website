@@ -81,7 +81,7 @@ const translations = {
         "nav-skills": "Tech Skills",
         "nav-resume": "My Resume",
         "about-title": "Hello everyone",
-        "about-text-1": "I am Abhiram kothwal, undergrad student in Information Science Engineering from Malnad College of Engineering,Hassan. Welcome to my personal website. This website represents my Journey through Skills, Projects & Growth. My Vision to create transformative technology ventures with global impact",
+        "about-text-1": "I am Abhiram kothwal, undergrad student in Information Science and Engineering from Malnad College of Engineering, Hassan. Welcome to my personal website. This website represents my Journey through Skills, Projects & Growth. My Vision to create transformative technology ventures with global impact",
         "about-text-2": "Vision to create transformative technology ventures with global impact.",
         "courses-title": "Courses Done",
         "projects-title": "Projects Done",
